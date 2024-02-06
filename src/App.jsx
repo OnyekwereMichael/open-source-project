@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import systemicon from "./assets/systemicon.png"
 import system from "./assets/system.jpg"
+import { FaCartPlus, FaMailBulk, FaTicketAlt, FaFacebook, FaTwitter, FaInstagram} from "react-icons/fa";
 
 
 function App() {
@@ -35,8 +36,9 @@ function App() {
 
           <main>
             <section className='overall_main'>
+                <FaFacebook className="facebook"/>
                  <p>Lorem ipsum dolor, sit amet<br/> consectetur adipisicing elit.<br/> Temporibus tempore, quo faci</p>
-
+                 <FaTwitter className="twitter"/>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aperiam molestias quae harum provident perspiciatis amet nihil facere veritatis corrupti ab, ad atque. Consequuntur eaque sit nobis perspiciatis sed nihil!</p>
                  </section>
           </main>

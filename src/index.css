@@ -10,6 +10,8 @@
   /* COLORS */
   --BGCOLOR: #000;
   --WHITE: #fff;
+  --BLUE: BLUE;
+  --LGHTBLUE: rgb(104, 104, 248);
   --WHITESMOKE: Whitesmoke;
   --ACTIVE-COLOR: GREEN;
   --ASH:#f4f4f4;
@@ -144,6 +146,13 @@ column-count: 2;
 color: var(--WHITE);
 margin-top: var(--MARGIN-TWENTY);
 padding: var(--PADDING-FIFTEEN);
+}
+
+.facebook{
+  background-color: var(--BLUE);
+}
+.twitter{
+  background-color: var(--LGHTBLUE);
 }
 @media screen and (max-width: 500px) {
   div > a {
