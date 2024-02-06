@@ -1,33 +1,24 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import systemicon from "./assets/systemicon.png"
+import system from "./assets/system.jpg"
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
       <header>
-      {/* navbar begins */}
+        <section className='overall_header'>
       <section class="navbar">
-        <img src="asseset/youtube.png" alt="" width="40px" />
+        <img src={systemicon} alt="" width="50px" />
         <div>
           <a href="">Home</a>
           <a href="">about</a>
           <a href="">marketplace</a>
           <a href="">maps</a>
         </div>
-
-        <div>
           <button class="tricks">Tips & Tricks</button>
-        </div>
       </section>
-
-
-     {/* navbar end */}
-      
+ 
    
- {/* header styling begins */}
     <section class="hero-sec" data-aos="zoom-in-up">
       <div>
         <h1>Web developent is for you</h1>
@@ -36,19 +27,19 @@ function App() {
           technical skills, creativity, and a commitment to continuous learning.
           Here are ten tips to help you thrive in this dynamic field:
         </p>
-        <div>
-          <button class="tips">Tips & Tricks</button>
-        </div>
+        <button class="tricks">Tips & Tricks</button>
       </div>
-
-      <div>
-        <img src="asseset/dev-removebg-preview.png" alt="" class="dev" />
-      </div>
+        <img src={system} alt="" class="dev"/>
+    </section>
     </section>
 
-    <section>
-      <p class="ten">TEN THINGS YOU NEED TO KNOW ABOU WEB DEVELOPMENT</p>
-    </section>
+          <main>
+            <section className='overall_main'>
+                 <p>Lorem ipsum dolor, sit amet<br/> consectetur adipisicing elit.<br/> Temporibus tempore, quo faci</p>
+
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aperiam molestias quae harum provident perspiciatis amet nihil facere veritatis corrupti ab, ad atque. Consequuntur eaque sit nobis perspiciatis sed nihil!</p>
+                 </section>
+          </main>
   </header>
   )
 }

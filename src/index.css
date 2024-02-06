@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800;900&family=Poppins:wght@100;300;400;500;600;700&family=Public+Sans:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,17 +6,67 @@
   font-family: Poppins;
 }
 
+:root{
+  /* COLORS */
+  --BGCOLOR: #000;
+  --WHITE: #fff;
+  --WHITESMOKE: Whitesmoke;
+  --ACTIVE-COLOR: GREEN;
+  --ASH:#f4f4f4;
+  --GRAY: #333;
+  --YELLOW: rgb(221, 208, 21);
+  --FONT-COLOR: black;
+     
+  /* FONT */
+  --FONT-WEIGHT: BOLD;
+  --FONT-SIZE: 12PX;
+  --HOVER-FONT-SIZE: 18PX;  
+  --TEXT-CENTER: CENTER;
+
+  /* BORDER */
+  --BORDER: NONE;
+  --BORDER-FIVE: 5PX;
+  --BORDER-TEN: 10PX;
+  --BORDER-FIFTEEN: 15PX;
+  --BORDER-TWENTY: 20PX;
+
+     /* MARGIN */
+
+     --MARGIN: 0;
+     --MARGIN-FIVE: 5PX;
+     --MARGIN-TEN: 10PX;
+     --MARGIN-FIFTEEN: 15PX;
+     --MARGIN-TWENTY: 20PX;
+
+     /* PADDING*/
+
+     --PADDINGF: 0;
+     --PADDING-FIVE: 5PX;
+     --PADDING-TEN: 10PX;
+     --PADDING-FIFTEEN: 15PX;
+     --PADDING-TWENTY: 20PX;
+
+     /* FONT SIZE */
+       --FONT-SIZE-FIVE: 5PX;
+       --FONT-SIZE-TEN: 10PX;
+       --FONT-SIZE-FIFTEEN: 15PX;
+       --FONT-SIZE-TWENTY: 20PX;
+       --FONT-SIZE-TWENTYFIVE: 25PX;
+       --FONT-SIZE-THIRTY: 30PX;
+    }
 body {
-  background-color: #000;
+  background-color: var(--BGCOLOR);
   min-height: 100vh;
 }
 
+
 /* header begins */
 
-header {
+.overall_header{
   animation: fade-out linear;
   animation-timeline: view();
   animation-range: exit;
+  background-color: var(--YELLOW);
 }
 
 @keyframes fade-out {
@@ -27,71 +78,100 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  background-color: #333;
-  color: #fff;
+  padding: var(--PADDING-TEN);
+  background-color: var(--GRAY);
+  color: var(--WHITE);
 }
 
 .navbar img {
-  margin-right: 10px;
+  margin-right: var(--MARGIN-TEN);
 }
-
-nav > a {
-  display: block;
-  margin-top: 20px;
-  text-decoration: none;
-  color: whitesmoke;
-  font-size: 20px;
-}
-.dev {
-  max-width: 100%;
-  height: auto;
-}
-
 div > a {
   text-decoration: none;
-  margin-left: 20px;
-  color: #fff;
-  font-size: 20px;
+  margin-left: var(--MARGIN-TWENTY);
+  color: var(--WHITE);
+  font-size: var(--FONT-SIZE-TWENTY);
 }
 .navbar button:first-child {
   padding: 6px 9px;
-  background-color: #fff;
-  border-radius: 5px;
-  font-weight: 600;
-  border: none;
+  background-color: var(--WHITE);
+  border-radius: var(--BORDER-FIVE);
+  font-weight: var(--FONT-WEIGHT);
+  border: var(--BORDER);
 }
 
 /* hero section  */
 .hero-sec {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: var(--TEXT-CENTER);
   padding: 40px 30px;
-  background-color: #f4f4f4;
+}
+.dev {
+  width: 35%;
+  height: auto;
 }
 
 .hero-sec button {
   padding: 6px 9px;
-  margin-top: 20px;
-  background-color: #fff;
-  border-radius: 5px;
+  margin-top: var(--MARGIN-TWENTY);
+  background-color: var(--WHITE);
+  border-radius: var(--BORDER-FIVE);
   font-weight: 600;
-  border: none;
+  border: var(--BORDER);
 }
 
 .hero-sec h1 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: var(--MARGIN-TWENTY);
 }
 
 .hero-sec p {
   max-width: 500px;
 }
+.tricks{
+  border-radius: var(--BORDER-TWENTY);
+  background-color: var(--BGCOLOR);
+  color: var(--WHITE);
+  border: var(--BORDER);
+  padding: 7px var(--PADDING-FIFTEEN);
+}
 
-.ten {
-  text-align: center;
-  font-size: 1.5rem;
-  margin: 30px 0;
-  color: #fff;
+/* main styling begins */
+
+.overall_main{
+column-count: 2;
+color: var(--WHITE);
+margin-top: var(--MARGIN-TWENTY);
+padding: var(--PADDING-FIFTEEN);
+}
+@media screen and (max-width: 500px) {
+  div > a {
+    display: none;
+  }
+  .navbar {
+    margin: var(--MARGIN);
+    justify-content: space-between;
+    padding-left: var(--PADDING-TWENTY);
+  }
+  .hero-sec h1 {
+    font-size: 2rem;
+    margin-bottom: var(--MARGIN);
+  }
+  .hero-sec {
+    flex-wrap: wrap;
+  }
+  .dev {
+    margin-top: 40px;
+    width: 90%;
+  }
+
+  /* main styling begins */
+
+  .overall_main{
+    column-count: 1;
+  }
+  .overall_main p:nth-child(2){
+    margin-top: var(--MARGIN-TWENTY);
+  }
 }
