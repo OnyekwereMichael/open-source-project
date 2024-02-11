@@ -38,9 +38,8 @@ function App() {
           <button className="tricks">Tips & Tricks</button>
 
           {/* only shows on mobile */}
-          <button onClick={() => setMenu(!menu)}>
-            <BiMenuAltRight size={50} className="bi" />
-          </button>
+          
+            <BiMenuAltRight size={50} className="bi" onClick={() => setMenu(!menu)}/>
         </section>
 
         {/* toggle button  */}
