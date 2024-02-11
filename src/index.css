@@ -164,7 +164,7 @@ div > a {
 .overall_main button {
   border-radius: var(--BORDER-FIVE);
   background-color: var(--YELLOW);
-  color: var(--WHITE);
+  color: var(--BGCOLOR);
   border: var(--BORDER);
   padding: 7px var(--PADDING-FIFTEEN);
   font-weight: var(--FONT-WEIGHT);
@@ -302,6 +302,7 @@ footer {
   .overall_main div {
     margin-top: 40px;
   }
+  
 
   /* footer styling */
 
