@@ -219,7 +219,8 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #f0f0f0; /* Changes background color on hover */
+  background-color: #f0f0f0;
+  color: var(--BGCOLOR); /* Changes background color on hover */
 }
 .show-nav a {
   display: block;
@@ -235,6 +236,7 @@ nav a:hover {
 }
 .bi {
   display: none;
+  color: var(--BGCOLOR);
 }
 /* end of toggle button styling */
 
