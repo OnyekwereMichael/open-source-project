@@ -2,7 +2,6 @@ import { useState, useRef } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import systemicon from "./assets/systemicon.png";
 import system from "./assets/system.jpg";
-import video from "./assets/video.mp4";
 import { movies } from "../src/mapped";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -81,11 +80,7 @@ function App() {
           </div>
         </section>
 
-        {/* video section */}
-        {/* <section>
-        <video src={video} autoPlay="true"></video>
-      </section> */}
-
+     
         <section>
           <h1 id="ourservices">Our Sevices</h1>
         </section>
